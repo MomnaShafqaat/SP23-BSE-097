@@ -1,0 +1,169 @@
+.navbar-dark{
+    background-color: rgb(3, 34, 64);
+    padding: 20px;
+    margin-bottom: -10px;
+}
+
+    .sm-font-size{
+        font-size: 1rem;
+    }
+    .something{
+        margin-top: 10px;
+        background-color: white;
+    }
+    .cen{
+        display: flex;
+        justify-content:center;
+        align-items: center;
+    }
+    
+   .nav-items{
+    color: white;
+   }
+   .slider-head{
+    position:absolute;
+    left:12%;
+    top:220px;
+    z-index: 110;color: white;
+    text-shadow: gray;
+
+   }
+
+      .shopbtn{
+        position:relative;
+        left:17%;
+        top:330px;
+        z-index: 100;
+      padding: 20px 110px;font-size: 16px;
+      }
+  .vid{
+    background-color:  rgb(3, 34, 64);
+  }
+
+  .actual-vid{
+    background-size: cover;
+    width: 300px;
+    height: 100%;
+    border-radius: 3rem;
+  }
+ 
+  /*=============== footer===========*/
+.end {
+    background-color: white;
+    border-radius: 50px 50px 0px 0px;
+    color: #022846;
+    display: flex;
+}
+
+.part1 {
+   
+}
+
+.part1 img {
+    margin: 10px;
+    background-size: cover;
+    height: 76px;
+    width: 188px;
+}
+
+.part1 h3 {
+    font-size: 2.2rem;
+    color: #022846;
+}
+
+.part1 p {
+    color: #022846;
+}
+
+.social-med i {
+    font-size: 33px;
+    color: #022846;
+}
+
+.part2 {
+}
+
+.part3 {
+
+
+}
+
+.footer-list1 a {
+    color: #031c2f;
+    font-weight: lighter;
+}
+
+.footer-list1 li {
+}
+
+.footer-list2 a {
+    color: #031c2f;
+    font-weight: lighter;
+}
+
+.footer-list2 li {
+}
+
+.bold-head a {
+    font-weight: bolder;
+}
+
+.footer-list1,
+.footer-list2 {
+}
+
+.line {
+    background-color: #002544;
+    height: 2px;
+    display: flex;
+    justify-content: center;
+    margin-left: 140px;
+    margin-top: -80px;
+
+}
+
+.policy a {
+    color: #002544;
+    font-size: medium;
+
+}
+
+.policy {
+    color: #002544;
+    font-size: medium;
+    display: flex;
+    justify-content: center;
+}
+a{
+    text-decoration: none;
+}
+li {
+    list-style-type: none;
+}
+
+.custom-space {
+    margin-top: 100px !important; /* Use !important to override any Bootstrap styles */
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
