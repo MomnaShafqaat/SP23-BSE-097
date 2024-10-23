@@ -1,0 +1,888 @@
+* {
+    color: white;
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+
+}
+
+
+
+li {
+    list-style-type: none;
+}
+
+/*---------------LEVEL 0----------------*/
+
+/*---------------pre-nav-bar-heading----------------*/
+
+#nav-headline {
+    height: 25px;
+    background-color: #9BCBEB;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding-top: 5px;
+    width: 1385px;
+    font-weight: 700;
+}
+
+.darkBlue_font {
+    color: #003865;
+}
+
+.darkBlue_bg {
+    background-color: #003865;
+}
+
+.border {
+    border: 1.5px solid transparent;
+}
+
+.border:hover {
+    border: 1.5px solid white;
+}
+
+/*---------------main-nav-bar-----------------*/
+#main-nav {
+    position: fixed;
+    /* Fixed position makes the nav stick to the viewport */
+    top: 0;
+    /* Stick the nav bar to the top */
+    width: 100%;
+    /* Make sure it spans the full width of the screen */
+    z-index: 1000;
+    width: 1385px;
+
+    height: 79px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    /* This will ensure the icons are in a row */
+}
+
+.logo {
+    margin: 18px;
+    margin-right: 220px;
+}
+
+ul {
+
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+
+    white-space: nowrap;
+    padding: 0 10px;
+    justify-content: space-between;
+    /* Center the icon horizontally within each box */
+    align-items: center;
+    /* Center the icon vertically within each box */
+
+}
+
+li a {
+    font-weight: 600;
+    font-size: medium;
+    text-decoration: none;
+    /* Remove the underline from links */
+    padding: 10px 15px;
+    /* Add padding for clickable area */
+    color: white;
+}
+
+/*---------------LEVEL 1----------------*/
+
+/*---------------------hero-section---------------------*/
+.hero-section {
+    background-image: url("https://cdn.sanity.io/images/otip2849/production/3caa9e5d9b81ca0f1c1f594b6aa551fddcce6abd-1920x1080.jpg?auto=format&amp;fit=max&amp;q=90&amp;w=240 240w");
+    /*background-image: url("	https://cdn.sanity.io/images/otip2849/production/3…6abd-1920x1080.jpg?auto=format&fit=max&q=90&w=960 ");  Ensure the correct path or move image to your project folder */
+
+    height: 540px;
+    background-size: cover;
+    position: relative;
+    /* Allows absolutely positioned elements inside it */
+    display: flex;
+    justify-content: flex-start;
+    /* Align items to the left */
+    align-items: center;
+    /* Vertically center items */
+}
+
+#dirty-chai-heading {
+    font-size: 3.9rem;
+    font-weight: bolder;
+    margin-left: 47px;
+    margin-bottom: 90px;
+}
+
+.shop-now-btn {
+
+    align-items: center;
+    padding: 23px;
+}
+
+.shop-now-btn {
+    position: absolute;
+    /* Makes the button's position relative to .hero-section */
+    left: 53px;
+    /* Moves the button 20px from the left */
+    top: 65%;
+    /* Aligns the button vertically in the center */
+    transform: translateY(-50%);
+    /* Centers the button vertically */
+    padding: 10px 20px;
+    /* Button size */
+
+    font-weight: bold;
+    cursor: pointer;
+    height: 60px;
+    width: 300px;
+    color: black;
+    background-color: white;
+    border-radius: 15px;
+    font-size: large;
+
+}
+
+.shop-now-btn:hover {
+
+    border: white;
+}
+
+.after-image-bar {
+    height: 40px;
+    background-color: white;
+    display: flex;
+    color: #003865;
+    font-weight: 700;
+    margin: 5px;
+
+}
+
+.rating-bar {
+    display: flex;
+
+}
+
+.star-rating {
+    font-size: 18px;
+    /* Adjust size of stars */
+    color: gold;
+    /* Set color to yellow */
+    margin-bottom: 1.5px;
+}
+
+.option i {
+    color: rgb(27, 63, 45);
+}
+
+.after-image-bar {
+    justify-content: space-evenly;
+}
+
+/*--------product show case-------*/
+.product-showcase {
+    width: 1385px;
+    height: 5400px;
+    background-color: #c5d5db;
+    display: flex;
+    flex-direction: column;
+
+}
+
+li {
+    color: #003865;
+}
+
+.product-heading {
+    text-align: center;
+
+}
+
+#bundle-heading {
+    color: #022846;
+    padding-top: 70px;
+    font-size: xx-large;
+    margin-bottom: -70px;
+}
+
+#bundle-para {
+    margin-bottom: -15px;
+    padding-bottom: 70px;
+    padding-top: -100px;
+    color: #003865;
+}
+
+/*---------------LEVEL 2----------------*/
+
+
+/*------------------box1------------------*/
+.shop-sec {
+    margin-left: 57px;
+    margin-right: 75px;
+    margin-bottom: 70px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    /* Distribute space between items */
+    height: 470px;
+
+
+
+
+}
+
+.box {
+    display: flex;
+
+
+}
+
+.box-content {
+
+    border-radius: 28px;
+    height: 405px;
+    width: 110;
+    background-color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    margin: 15px;
+    padding: 20px;
+    transition: background-color 0.3s ease;
+
+}
+
+.box-content:hover {
+    background-color: #a7c0cb;
+}
+
+.box-img {
+    height: 220px;
+    width: 240px;
+    background-size: cover;
+    margin-top: 0.15rem;
+    margin-bottom: 0.3rem;
+
+}
+
+.below-img-info {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0.2rem;
+}
+
+
+
+.price-btn {
+    height: 55px;
+    width: 250px;
+    background-color: rgb(39, 85, 49);
+    border-radius: 13px;
+    margin-bottom: 13px;
+    margin-top: 13px;
+    font-size: large;
+    font-weight: 800;
+}
+
+.box-content h2 {
+    font-size: medium;
+    font-weight: 1000;
+    color: #003865;
+
+
+}
+
+.review {
+
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.view-detail-prod a {
+    color: #3c6b8f;
+}
+
+.view-detail-prod a:hover {
+    color: white;
+}
+
+/*---------------LEVEL 3----------------*/
+
+/*----------something for everyone------*/
+
+
+
+.after-products {
+    height: 480px;
+    width: 1385px;
+    border-radius: 50px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+.something-for-everyone h2 {
+    text-align: center;
+    color: #022846;
+    padding-top: 60px;
+    padding-bottom: 50px;
+
+    font-size: xx-large;
+}
+
+.shake-image {
+    height: 195px;
+
+    width: 202px;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 15px;
+}
+
+/* Keyframe animation for shake */
+@keyframes shake {
+    0% {
+        transform: translate(0px, 0px);
+    }
+
+    20% {
+        transform: translate(-3px, 0px);
+    }
+
+    40% {
+        transform: translate(3px, 0px);
+    }
+
+    60% {
+        transform: translate(-3px, 0px);
+    }
+
+    80% {
+        transform: translate(3px, 0px);
+    }
+
+    100% {
+        transform: translate(0px, 0px);
+    }
+}
+
+/* Apply the shake animation on hover */
+.shake-image:hover {
+    animation: shake 0.7s;
+    /* Duration of the shake */
+    animation-iteration-count: 1;
+    /* Shake only once */
+}
+
+.below-img-info2 h4 {
+    color: #022846;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#accessories-box2 {
+    margin-left: 60px;
+}
+
+/*---------------LEVEL 4----------------*/
+
+/*------------------box2------------------*/
+.box-content2 {
+    height: 270px;
+    width: 225px;
+    margin: -10px;
+
+}
+
+.box2 {
+    height: 273px;
+    width: 1300;
+    margin-left: 5px;
+    margin-right: 5px;
+
+    display: flex;
+    justify-content: center;
+    padding-bottom: 70px;
+}
+
+body {
+    width: 1385px;
+    overflow-x: hidden;
+}
+
+.product-heading h2 {
+    padding-bottom: 20px;
+
+}
+
+/*---------------LEVEL 5----------------*/
+
+/*-----------------emma lab video------------------*/
+.emma-vid {
+    background-color: #022846;
+    height: 750px;
+    width: 1385px;
+    border-radius: 50px;
+    margin-top: 680px;
+    display: flex;
+}
+
+.vid-text {
+    height: 590px;
+    width: 50%;
+    margin: 88px;
+    margin-top: 89px;
+    display: flex;
+    flex-direction: column;
+
+    justify-content: flex-start;
+    align-items: start;
+
+}
+
+.lab-btn {
+
+    padding: 10px 20px;
+    /* Button size */
+
+    font-weight: bold;
+    cursor: pointer;
+    height: 60px;
+    width: 300px;
+    color: black;
+    background-color: white;
+    border-radius: 15px;
+    font-size: large;
+
+}
+
+.lab-heading1 {
+    font-weight: bold;
+    font-size: 1.3rem;
+    margin-bottom: 13px;
+}
+
+.lab-heading2 {
+    font-size: 1.47rem;
+    font-weight: bolder;
+}
+
+.lab-para {
+    font-size: large;
+    margin: 16px 0px 27px 0px;
+}
+
+.cartoonish-mug {
+    height: 230px;
+    width: 210px;
+    background-size: cover;
+    margin-top: 89px;
+}
+
+.actual-vid {
+
+    background-size: cover;
+    height: 587px;
+    width: 23.8%;
+    border-radius: 50px;
+    margin: 82px 15px 0px 0px;
+}
+
+.buzz-prod {
+    background-color: white;
+    height: 779px;
+    width: 1385px;
+    border-radius: 50px;
+    margin-top: 90px;
+}
+
+.shop-sec3 {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    /* Distribute space between items */
+    height: 490px;
+    ;
+    margin-top: 70px;
+
+
+
+
+}
+
+.box3 {
+    display: flex;
+    margin: 5px 5px 5px 13px;
+}
+
+
+
+#bundle-heading {
+    font-size: 2rem;
+    margin-bottom: 3px;
+}
+
+.box-content3 {
+
+    border-radius: 28px;
+    height: 546px;
+    width: 90;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    padding: 5px;
+
+
+}
+
+
+.box-img3 {
+
+    height: 308px;
+    width: 288px;
+    background-size: cover;
+    border-radius: 30px;
+
+}
+
+.below-img-info3 {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: 0.2rem;
+}
+
+.darkBlue_font3 {
+    color: #084a81;
+}
+
+.price-btn3 {
+    height: 79px;
+    width: 270px;
+    background-color: rgb(39, 85, 49);
+    border: none;
+    border-radius: 13px;
+    margin: 1rem;
+    font-size: large;
+    font-weight: 800;
+}
+
+.box-content h2 {
+    font-size: medium;
+    font-weight: 1000;
+    color: #003865;
+
+
+}
+
+.prod-name3 {
+    color: #003865;
+    font-size: medium;
+    font-weight: bolder;
+}
+
+.review3 {
+    margin: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.review3 p {
+    margin: 6px 0px 3px;
+    font-size: large;
+}
+
+.view-detail-prod3 p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 270px;
+    height: 100px;
+    margin: 8px;
+    color: #022846;
+}
+
+.subscribe-email {
+
+    height: 509px;
+    width: 1250px;
+    margin: 100px 50px 70px 55px;
+    display: flex;
+
+}
+
+.subscribe-part {
+
+    height: 429px;
+    width: 409px;
+
+}
+
+.subscribe-part ul li {
+    margin: 8px 0px 8px;
+
+}
+
+.subscribe-part ul {
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: larger;
+}
+
+.subscribe-part h2 {
+    margin: 30px 0px 30px;
+    font-size: 3.3rem;
+    color: #022846;
+}
+
+.subscribe-part p,
+a {
+    color: #022846;
+    margin: 8px 0px 8px;
+    font-size: large;
+    text-decoration: none
+}
+
+.img-door {
+    height: 429px;
+    width: 430px;
+    background-size: cover;
+}
+
+.drop-down-menues {
+    margin-top: 2.4rem;
+    height: 429px;
+    width: 449px;
+
+}
+
+.mocha-heading h2 {
+    color: #022846;
+}
+
+.dropdown-4btn button {
+    height: 45px;
+    width: 400px;
+    display: flex;
+    background-color: white;
+    border-radius: 8px;
+    margin-bottom: 13px;
+    margin-top: 13px;
+
+}
+
+.drop-down-menues .review {
+    justify-content: flex-start;
+}
+
+.dropdown-4btn button h4 {
+
+    color: #022846;
+    font-size: medium;
+    font-weight: 800;
+}
+
+.dropdown-4btn button h5 {
+
+    color: #022846;
+    font-size: medium;
+
+}
+
+.subs {
+    height: 59px;
+    width: 397px;
+    background-color: rgb(39, 85, 49);
+    border: none;
+    border-radius: 10px;
+    margin: 20px 0px 0px 2px;
+    font-size: large;
+    font-weight: 800;
+}
+
+
+
+
+.last-emma-img {
+    background-color: #0e366e;
+    height: 600px;
+    width: 1225px;
+    margin: 0px 50px 30px 70px;
+    border-radius: 30px;
+    margin-top: 0px;
+    display: flex;
+}
+
+
+.emma-info {
+
+    height: 99%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.emma-info h2 {
+
+    font-size: 2.6rem;
+    font-weight: bolder;
+    margin: 20px
+}
+
+.emma-info p {
+    margin: 10px 40px 10px 40px;
+    text-align: center;
+    font-size: larger
+}
+
+.emma-round-img {
+    height: 100%;
+    width: 50%;
+    background-size: cover;
+    border-radius: 0px 31px 31px 0px;
+}
+
+.learn-more {
+    height: 59px;
+    width: 287px;
+    color: #031c2f;
+    border: none;
+    border-radius: 12px;
+    margin: 20px 0px 0px 2px;
+    font-size: large;
+    font-weight: 800;
+}
+
+/*=============== footer===========*/
+.end {
+    background-color: white;
+    height: 499px;
+    width: 1385px;
+    border-radius: 50px 50px 0px 0px;
+    margin-top: 90px;
+    color: #022846;
+    padding: 20px;
+    display: flex;
+}
+
+.part1 {
+    height: 480px;
+    width: 600px;
+    margin: 70px 0px 50px 50px;
+}
+
+.part1 img {
+    margin: 10px;
+    background-size: cover;
+    height: 76px;
+    width: 188px;
+}
+
+.part1 h3 {
+    font-size: 2.2rem;
+    margin: 15px;
+    color: #022846;
+}
+
+.part1 p {
+    margin: 10px;
+    color: #022846;
+}
+
+.social-med i {
+    font-size: 33px;
+    color: #022846;
+    margin: 20px 5px 20px 5px;
+}
+
+.part2 {
+    margin: 70px 70px 70px 0px;
+}
+
+.part3 {
+
+
+    margin: 90px 0px 50px 0px;
+    height: 400px;
+}
+
+.footer-list1 a {
+    color: #031c2f;
+    font-weight: lighter;
+}
+
+.footer-list1 li {
+    margin: 8px 0px 8px;
+}
+
+.footer-list2 a {
+    color: #031c2f;
+    font-weight: lighter;
+}
+
+.footer-list2 li {
+    margin: 8px 0px 8px;
+}
+
+.bold-head a {
+    font-weight: bolder;
+}
+
+.footer-list1,
+.footer-list2 {
+    margin: 30px;
+}
+
+.line {
+    background-color: #002544;
+    width: 1095px;
+    height: 2px;
+    display: flex;
+    justify-content: center;
+    margin-left: 140px;
+
+}
+
+.policy a {
+    color: #002544;
+    font-size: medium;
+    margin: 0px 10px 20px 10px;
+
+}
+
+.policy {
+    color: #002544;
+    font-size: medium;
+    display: flex;
+    justify-content: center;
+}
