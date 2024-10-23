@@ -1,0 +1,26 @@
+.info-form{
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    
+}
+
+.error-message{
+    color: red;
+}
+input{
+    border:1px solid grey;
+}
+body{
+    background-color: rgb(138, 163, 174);
+}
+#sbmt{
+    background-color: rgb(0, 52, 82);
+
+}
+
+#blue-font{
+ color: rgb(0, 52, 82);
+}
+input, form{
+    border-radius: 14px;
+}
