@@ -1,4 +1,0 @@
-Project 1: Website Development
-Image: imageP1.jpeg
-Summary: This project involved building a responsive website using HTML, CSS, and JavaScript.
-Description: I created a responsive portfolio website as a part of my Semester 1 project. The project focused on basic web development skills such as structuring content with HTML, styling with CSS, and adding interactivity with JavaScript. 

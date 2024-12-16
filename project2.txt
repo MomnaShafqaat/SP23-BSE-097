@@ -1,4 +1,0 @@
-Project 2: E-commerce Application
-Image: imageP2.jpeg
-Summary: The project involved building a simple e-commerce platform using PHP and MySQL.
-Description: In Semester 2, I developed a small e-commerce website with user registration, product listing, and a shopping cart system. The project showcased my skills in back-end programming and database management, as well as the ability to integrate PHP with MySQL for dynamic content generation.
