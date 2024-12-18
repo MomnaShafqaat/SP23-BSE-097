@@ -1,0 +1,99 @@
+<style>
+  body {
+    background-color: #b7c9da; /* Light background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120vh;
+    margin: 0;
+  }
+  
+  .form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 10px rgba(16, 30, 79, 0.176);
+    border-radius: 30px;
+    padding: 1.2rem;
+    width: 100%;
+    max-width: 600px;
+  }
+  
+  .form-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  .form-text {
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+  
+  .btn-dark {
+    background-color:#0c233d;
+    border: none;
+  }
+  .btn-dark:hover {
+    background-color: #14293f;
+  }
+  </style>
+
+<div class="container mt-5"  >
+    <h2>Register</h2>
+
+    <!-- Display Flash Message (if any) -->
+
+    <!-- Check if messages exist and are not empty 
+<% if (messages && messages.length > 0) { %>
+  <div class="alert alert-danger">
+    <% messages.forEach(function(message) { %>
+      <p><%= message %></p>
+    <% }); %>
+  </div>
+<% } %>-->
+
+<!-- Display Flash Messages -->
+
+
+
+<!-- Check for success messages -->
+<% if (successMessage && successMessage.length > 0) { %>
+  <div class="alert alert-success">
+    <% successMessage.forEach(function(message) { %>
+      <p><%= message %></p>
+    <% }) %>
+  </div>
+<% } %>
+
+<!-- Check for error messages -->
+<% if (errorMessage && errorMessage.length > 0) { %>
+  <div class="alert alert-danger">
+    <% errorMessage.forEach(function(message) { %>
+      <p><%= message %></p>
+    <% }) %>
+  </div>
+<% } %>
+    <!-- Registration Form -->
+    <form action="/register" method="POST"   >
+      <div class="mb-3">
+        <label for="email" class="form-label">Email</label>
+        <input type="email" class="form-control" id="email" name="email" required>
+      </div>
+
+      <div class="mb-3">
+        <label for="name" class="form-label">Name</label>
+        <input type="text" class="form-control" id="name" name="name" required>
+      </div>
+
+      <div class="mb-3">
+        <label for="password" class="form-label">Password</label>
+        <input type="password" class="form-control" id="password" name="password" required>
+      </div>
+
+      <button type="submit" class="btn btn-primary">Register</button>
+    </form>
+  </div>
