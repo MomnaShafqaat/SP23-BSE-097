@@ -1,0 +1,18 @@
+<% if (stylesheet && stylesheet.length) { %>
+    <% stylesheet.forEach(function(sheet) { %>
+        <link href="<%= sheet %>" rel="stylesheet">
+    <% }) %>
+<% } %>
+
+<% categories.forEach(function(category) { %>
+
+
+    <div class="col-md-4 mb-4">
+        <div class="card">
+            <img src="/uploads/1734290503946-download.jpg" class="card-img-top" alt="<%= category.title %>">
+            <div class="card-body">
+                <h5 class="card-title text-center"><%= category.title %></h5>
+            </div>
+        </div>
+    </div>
+<% }); %>

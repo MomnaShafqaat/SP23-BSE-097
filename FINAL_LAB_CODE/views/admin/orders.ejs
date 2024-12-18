@@ -1,0 +1,38 @@
+<h2>Admin Orders</h2>
+
+<% if (orders.length > 0) { %>
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Order ID</th>
+        <th>Customer Name</th>
+        <th>Address</th>
+        <th>Order Total</th>
+        <th>Order Date</th>
+        <th>Products Ordered</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% orders.forEach(function(order) { %>
+        <tr>
+          <td><%= order._id %></td>
+          <td><%= order.customerInfo.name %></td>
+          <td><%= order.customerInfo.address.street %>, <%= order.customerInfo.address.city %>, <%= order.customerInfo.address.postalCode %></td>
+          <td>$<%= order.orderTotal %></td>
+          <td><%= order.orderDate.toLocaleString() %></td>
+          <td>
+            <ul>
+              <% order.orderItems.forEach(function(item) { %>
+                <li>
+                  <%= item.quantity %> x <%= item.product.title %> - $<%= (item.product.price * item.quantity).toFixed(2) %>
+                </li>
+              <% }); %>
+            </ul>
+          </td>
+        </tr>
+      <% }); %>
+    </tbody>
+  </table>
+<% } else { %>
+  <p>No orders found.</p>
+<% } %>

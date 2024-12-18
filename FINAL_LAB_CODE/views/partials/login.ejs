@@ -1,0 +1,69 @@
+<style>
+  body {
+    background-color: #b7c9da; /* Light background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120vh;
+    margin: 0;
+  }
+  
+  .form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 10px rgba(16, 30, 79, 0.176);
+    border-radius: 30px;
+    padding: 1.2rem;
+    width: 100%;
+    max-width: 600px;
+  }
+  
+  .form-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  .form-text {
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+  
+  .btn-dark {
+    background-color:#0c233d;
+    border: none;
+  }
+  .btn-dark:hover {
+    background-color: #14293f;
+  }
+  </style>
+
+<div class="container mt-5">
+  <h2>Login</h2>
+
+  <!-- Display Flash Message -->
+  <% if (successMessage.length > 0) { %>
+    <div class="alert alert-success">
+      <%= successMessage %>
+    </div>
+  <% } %>
+
+  <!-- Login Form (you can add your login form here) -->
+  <form action="/login" method="POST">
+    <div class="mb-3">
+      <label for="email" class="form-label">Email</label>
+      <input type="email" class="form-control" id="email" name="email" required>
+    </div>
+
+    <div class="mb-3">
+      <label for="password" class="form-label">Password</label>
+      <input type="password" class="form-control" id="password" name="password" required>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Login</button>
+  </form>
+</div>

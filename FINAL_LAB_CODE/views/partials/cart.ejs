@@ -1,0 +1,23 @@
+<div class="product row mt-4">
+  <% if (products.length > 0) { %>
+    <% products.forEach(function(product) { %>
+      <div class="product-card col-md-4 col-sm-6 col-12">
+        <img src="/<%= product.picture %>" alt="<%= product.title %>" class="product-image">
+        <div class="product-info">
+          <h3 class="product-title"><%= product.title %></h3>
+          <p class="product-price">$<%= product.price.toFixed(2) %></p>
+        </div>
+      </div>
+    <% }); %>
+
+    <!-- Checkout Button -->
+    <a href="/check-out">
+      <button class="btn btn-primary">
+        Check Out
+      </button>
+    </a>
+  
+  <% } else { %>
+    <p>No products in your cart yet.</p>
+  <% } %>
+</div>

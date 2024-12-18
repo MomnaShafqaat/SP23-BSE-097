@@ -1,0 +1,50 @@
+/* public/css/admin.css */
+
+/* Container Styling */
+body{
+    margin: 0 auto;
+    background-color: rgb(177, 206, 213);
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: rgb(255, 255, 255);
+    border-radius: 30px;
+}
+
+/* Table Styling */
+table {
+    border-collapse: collapse;
+}
+
+table th, table td {
+    text-align: center;
+    vertical-align: middle;
+}
+
+/* Image Styling */
+table img {
+    border-radius: 2px;
+    box-shadow: 0 4px 6px rgba(2, 32, 85, 0.416);
+}
+
+/* Button Styling */
+.btn-warning, .btn-danger {
+    margin-right: 5px;
+}
+
+.btn-primary {
+    padding: 10px 20px;
+    font-weight: bold;
+}
+
+/* Pagination Styling */
+.pagination .page-link {
+    color: #072d56;
+}
+
+.pagination .page-link.active {
+    background-color: #123f70;
+    color: #fff;
+    border-color: #0a3665;
+}

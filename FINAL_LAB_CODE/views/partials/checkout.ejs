@@ -1,0 +1,29 @@
+<div class="container">
+    <h2>Checkout</h2>
+    
+    <% if (products.length > 0) { %>
+      <div class="product row mt-4">
+        <% products.forEach(function(product) { %>
+          <div class="product-card col-md-4 col-sm-6 col-12">
+            <img src="/<%= product.picture %>" alt="<%= product.title %>" class="product-image">
+            <div class="product-info">
+              <h3 class="product-title"><%= product.title %></h3>
+              <p class="product-price">$<%= product.price.toFixed(2) %></p>
+            </div>
+          </div>
+        <% }); %>
+      </div>
+      
+      <h3>Delivery Address</h3>
+      <form id="checkoutForm" method="POST" action="/checkout">
+        <input type="text" name="name" placeholder="Name" required>
+        <input type="text" name="street" placeholder="Street" required>
+        <input type="text" name="city" placeholder="City" required>
+        <input type="text" name="postalCode" placeholder="Postal Code" required>
+        <button type="submit">Place Order</button>
+      </form>
+    <% } else { %>
+      <p>No products in your cart yet.</p>
+    <% } %>
+  </div>
+  
